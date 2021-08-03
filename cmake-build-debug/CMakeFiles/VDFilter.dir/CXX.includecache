@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yishenjin/CLionProjects/VDFilter/MainVD.h
+
+/home/yishenjin/CLionProjects/VDFilter/main.cpp
+iostream
+-
+MainVD.h
+/home/yishenjin/CLionProjects/VDFilter/MainVD.h
+
