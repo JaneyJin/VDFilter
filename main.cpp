@@ -1,3 +1,5 @@
+# pragma comment(lib, "ws2_32.lib")
+
 #include <iostream>
 #include "MainVD.h"
 #include "Client.h"
@@ -19,11 +21,11 @@ int main() {
 
             vd.VD_filter(sumo_pos.x, sumo_pos.y, sumo_angle,&psi, &ue_X, &ue_Y, &ue_V);
 
-
+            count++;
             if(count % 10 == 0){
                 client.simulationStep();
 
-                count++;
+
 
                 sumo_pos = client.vehicle.getPosition("car0");
                 sumo_angle = client.vehicle.getAngle("car0");
